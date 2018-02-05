@@ -1,5 +1,6 @@
 public class Utils {
     public enum Operator {
+        EqualTo,
         GreaterThan,
         GreaterThanOrEqualTo,
         LessThan,

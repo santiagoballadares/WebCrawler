@@ -76,6 +76,9 @@ public class Entry {
         for (Entry entry : list) {
             boolean condition = false;
             switch (operator) {
+                case EqualTo:
+                    condition = Utils.countWordsInString(entry.getTitle()) == numberOfWords;
+                    break;
                 case GreaterThan:
                     condition = Utils.countWordsInString(entry.getTitle()) > numberOfWords;
                     break;
